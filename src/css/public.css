@@ -1,0 +1,53 @@
+html,body,div,a,p,li,ol,ul,span,img,input,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::before,
+.clearfix::after {
+    height: 0;
+    line-height: 0;
+    display: block;
+    content: "";
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+a {
+    text-decoration: none;
+    color: #333
+}
+li {
+    list-style: none;
+}
+body {
+    font: normal 400 12px "Microsoft Yahei";
+    color: #333;
+    box-sizing: border-box;
+}
+img,input {
+    vertical-align: middle;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float: right;
+}
+.pr {
+    position: relative;;
+}
+.pa {
+    position: absolute;
+}
+.pf {
+    position: fixed;
+}
+input,textarea{
+    outline: none;
+}
+textarea {
+    resize:none
+}
+

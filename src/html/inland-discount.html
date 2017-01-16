@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/inland-discount.css">
+</head>
+<body>
+<div class="inland-discount">
+    <div class="inland-top pf" id="discount-top">
+        <a class ="back pa" href="javascript:;">&#xe630;</a>
+        <h3>国内折扣</h3>
+        <a href="javascript:;" class="download pa"><span class="inland-download">&#xe636;</span>APP下载</a>
+    </div>
+    <div class="inland-content">
+        <ul class="content clearfix"></ul>
+    </div>
+    <!--国内折扣的内容的引擎模板-->
+    <script type="text/template" id="Content">
+        <%for(var i=0; i< items.length; i++){%>
+        <li class="fl outer">
+            <a href="discount-detail.html" class="inter">
+                <div class="inter-er"></div>
+                <!--<img src="images/phone.jpg" alt="">-->
+                <div class="message">
+                    <p class="info succinct"><%=items[i].productName%></p>
+                    <p class="price succinct"><%=items[i].productPrice%></p>
+                    <span class="seller"><%=items[i].productFrom%></span>
+                    <span class="timer"><%=items[i].productTime%></span>
+                </div>
+            </a>
+        </li>
+        <%}%>
+</script>
+    <div class="inland-bottom">
+        <ul class=clearfix>
+            <li><a href="javascript:;">登录</a></li>
+            <li><a href="javascript:;">注册</a></li>
+            <li><a href="#discount-top"><span>&#xe613;</span>返回顶部</a></li>
+        </ul>
+        <div>
+            <p><a href="javascript:;">手机APP下载 </a>慢慢买手机版 <span>--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src = "../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/template-native.js"></script>
+<!--<script src = "../js/jQuery.succinct.min.js"></script>-->
+<script src="../js/inland-discount.js"></script>
+
+<script>
+    $(function(){
+        var obj = {
+            size:0,
+            discount_container: $(".inland-content ul"),
+            discount_id: "Content",
+            discount_url: "http://mmb.ittun.com/api/getinlanddiscount",
+            arr:[],
+            results:null,
+            container:$(".inland-content ul"),
+            results:null
+        }
+        var disCount = new discount(obj);
+    })
+
+
+
+</script>
+</html>

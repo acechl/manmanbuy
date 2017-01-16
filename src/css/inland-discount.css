@@ -1,0 +1,176 @@
+html {
+    font-size: 625%
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size:940%!important
+    }
+}
+@media only screen and (min-width: 561px) {
+    html {
+        font-size:1090%!important
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size:1250%!important
+    }
+}
+@font-face {
+    font-family: inland;
+    src: url('../font/fonts/iconfont.eot'); /* IE9*/
+    src: url('../font/fonts/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/fonts/iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+.inland-discount {
+    font-family: inland;
+}
+/*.inland-back::before {*/
+    /*!*content:"";*!*/
+    /*content:"&#xe630;";*/
+    /*font-size: 14px;*/
+/*}*/
+/*.inland-download::before {*/
+    /*content: "&#xe636;";*/
+    /*font-size: 14px;*/
+/*}*/
+/*.inland-arrow::before {*/
+    /*content: "&#xe613;";*/
+    /*font-size: 14px;*/
+/*}*/
+/*国内折扣头部部分 begin*/
+.inland-discount .inland-top {
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+    left: 0;
+    top: 0px;
+}
+.inland-discount .inland-top h3 {
+    line-height: 50px;
+    height: 50px;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.18rem;
+}
+.inland-discount .back {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    line-height: 50px;
+    font-size: 0.1rem;
+    color: #fff;
+    text-align: center;
+}
+.inland-discount .download {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    text-align: center;
+}
+.inland-discount .download span {
+    font-size: 0.1rem;
+    width: 50px;
+    display: block;
+    margin: 6px 0;
+}
+/*国内折扣头部部分 end*/
+/*国内折扣内容部分 begin*/
+.inland-discount .inland-content {
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+.inland-discount .inland-content ul {
+    width: 100%;
+}
+.inland-discount .inland-content li {
+    width: 50%;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 0.1rem 3% 5px 3%;
+}
+.inland-discount .inland-content li:nth-child(2n-1){
+    border-right: 1px solid #EEEEEE;
+}
+.inland-discount .inland-content li div:first-child {
+    height: 30%;
+}
+.inland-discount .inland-content li img {
+    width: 1.2rem;
+}
+.inland-discount .inland-content li:nth-child(17) .inter-er img {
+    margin-top: -0.065rem;
+}
+.inland-discount .inland-content li p {
+    /*padding-left: 0.1rem;*/
+    /*padding-right: 0.1rem;*/
+    font-size: 0.1rem;
+}
+@media screen and (min-width: 484px){
+    .inland-discount .inland-content li p:nth-child(1){
+        height: 0.28rem;
+    }
+}
+.inland-discount .inland-content li p:nth-child(1) {
+    font-weight: 600;
+    height: 0.34rem;
+    width: 100%;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+}
+.inland-discount .inland-content li p:nth-child(2) {
+    color: #FF6C00;
+    line-height: 0.2rem;
+    height: 0.2rem;
+    width: 100%;
+    -webkit-text-overflow: ellipsis;
+    overflow: hidden;
+}
+.inland-discount .inter-er {
+    text-align: center;
+    margin-top: 10px;
+}
+.inland-discount .inland-content li p:nth-child(4) {
+     line-height: 0.2rem;
+ }
+.inland-discount .inland-bottom {
+    width: 100%;
+    background-color: #EFEFEF;
+}
+.inland-discount .inland-bottom ul li a{
+    display: inline-block;
+    width: 33.33%;
+    float: left;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.inland-discount .inland-bottom ul li:nth-child(2) a{
+    border: 1px solid #C4C4C4;
+}
+.inland-discount .inland-bottom p {
+    line-height: 15px;
+    text-align: center;
+}
+.inland-discount .inland-bottom p:nth-child(1) {
+    margin-top: 5px;
+}
+.inland-discount .inland-bottom div a {
+    color: #FF0000;
+}
+.inland-discount .inland-bottom div p:last-child {
+    color: #666666;
+}
+/*国内折扣内容部分 end*/

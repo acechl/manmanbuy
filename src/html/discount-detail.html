@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/discount-detail.css">
+    <link rel="stylesheet" href="../css/inland-discount.css">
+</head>
+<body>
+<div class="discount-detail">
+    <div class="inland-top pf" id="discount-top">
+        <a class ="back pa" href="inland-discount.html">&#xe630;</a>
+        <h3>国内折扣</h3>
+        <a href="javascript:;" class="download pa"><span class="inland-download">&#xe636;</span>APP下载</a>
+    </div>
+    <ul class="detail"></ul>
+    <div class="buy-now">
+        <button>前往购买</button>
+    </div>
+    <div class="wechat">
+        <p>手慢无/神价格/BUG价/优惠券/白菜价/秒杀...</p>
+        <p>京东/天猫/苏宁/亚马逊/国美/易迅/1号店...</p>
+        <button>慢慢买|第一时间发布国内外优惠信息</button>
+        <img src="" alt="">
+        <div class="wechat-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="new-comment"></div>
+    <div class="inland-bottom">
+        <ul class=clearfix>
+            <li><a href="javascript:;">登录</a></li>
+            <li><a href="javascript:;">注册</a></li>
+            <li><a href="#discount-top"><span>&#xe613;</span>返回顶部</a></li>
+        </ul>
+        <div>
+            <p><a href="javascript:;">手机APP下载 </a>慢慢买手机版 <span>--掌上比价平台</span></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+<!--引擎模板-->
+<script type="text/template" id="detail">
+        <li class="li-detail">
+            <h3><%= items[0].productName%></h3>
+            <div class="from">
+                <span><%= items[0].productFrom%></span>
+                <span><%= items[0].productTime%></span>
+                <span><%= items[0].productTips%></span>
+            </div>
+            <div>
+                <div class="smallImg first-img"></div>
+                <div>
+                    <p><%= items[0].productInfo2%></p>
+                </div>
+            </div>
+        </li>
+</script>
+</body>
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/template-native.js"></script>
+<script src = "../js/discount-detail.js"></script>
+<script>
+    $(function(){
+        var Detail = new detail();
+    })
+</script>
+</html>

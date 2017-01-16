@@ -1,0 +1,291 @@
+html {
+    font-size: 625%
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size:940%!important
+    }
+}
+@media only screen and (min-width: 561px) {
+    html {
+        font-size:1090%!important
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size:1250%!important
+    }
+}
+@font-face {
+    font-family: inland;
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+.discount-detail {
+    font-family: inland;
+}
+/*国内折扣头部部分 begin*/
+.discount-detail .inland-top {
+    width: 100%;
+    height: 50px;
+    background-color: #FF841D;
+    left: 0;
+    top: 0px;
+    z-index: 1;
+}
+.discount-detail .inland-top h3 {
+    line-height: 30px;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.25rem;
+}
+/*国内折扣头部部分 end*/
+/*国内折扣内容 begin*/
+.discount-detail .back {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    line-height: 50px;
+    font-size: 0.1rem;
+    color: #fff;
+    text-align: center;
+}
+.discount-detail .download {
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    text-align: center;
+}
+.discount-detail .download span {
+    font-size: 0.1rem;
+    width: 50px;
+    display: block;
+    margin: 0.06rem 0;
+}
+.discount-detail .detail {
+    padding-top: 0.5rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+.discount-detail h3 {
+    font-size: 0.18rem;
+    margin-top: 0.1rem;
+    line-height: 0.2rem;
+}
+.discount-detail .from {
+    line-height: 0.4rem;
+    font-size: 0.14rem;
+    color: #c5c5c5;
+}
+.discount-detail p {
+    font-size: 0.16rem;
+    line-height: 0.2rem;
+    color: #a5a5a5;
+}
+.discount-detail .first-img {
+    float: right;
+}
+.discount-detail .first-img {
+    width: 30%;
+}
+.discount-detail  img:last-child {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+}
+.discount-detail .wechat {
+    width: 84%;
+    margin: 20px 3%;
+    border: 1px solid #F3B9AE;
+    border-top-color: #E97F6A;
+    border-bottom-color: #E97F6A;
+    position: relative;
+    padding: 20px 5%;
+}
+.discount-detail .wechat-top span {
+    display: inline-block;
+    height: 0.1rem;
+    width: 0.1rem;
+}
+.discount-detail .wechat-top span {
+    position: absolute;
+}
+.discount-detail .wechat-top span:first-child {
+    border-top: 2px solid #E04627;
+    border-left: 2px solid #E04627;
+    top: -2px;
+    left: -2px;
+}
+.discount-detail .wechat-top span:nth-child(2) {
+    border-top: 2px solid #E04627;
+    border-right: 2px solid #E04627;
+    top: -2px;
+    right: -2px;
+}
+.discount-detail .wechat-top span:nth-child(3) {
+    border-bottom: 2px solid #E04627;
+    border-left: 2px solid #E04627;
+    bottom: -2px;
+    left: -2px;
+}
+.discount-detail .wechat-top span:last-child {
+    border-bottom: 2px solid #E04627;
+    border-right: 2px solid #E04627;
+    bottom: -2px;
+    right: -2px;
+}
+.wechat p {
+    color: #E56951;
+    font-size: 0.1rem;
+    line-height: 20px;
+}
+.wechat button {
+    background-color: #E04627;
+    width: 70%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+    font-size: 0.12rem;
+    color: #fff;
+}
+.discount-detail .new-comment {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+}
+.discount-detail .new-comment .tit {
+    font-size: 16px;
+}
+.discount-detail .new-comment  textarea{
+    height: 1rem;
+    width: 100%;
+    border: none;
+}
+.discount-detail .reply {
+    position: relative;
+    height: 1.4rem;
+    width: 100%;
+    border: 2px solid #ECEAE8;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.discount-detail .ctrl {
+    position: absolute;
+    bottom: 0px;
+    right: -0.03rem;
+    background-color: #FBFBFB;
+    height: 0.4rem;
+    width: 100%;
+    border: 1px solid #FBFBFB;
+    border-top: 1px solid #F2F2F2;
+}
+.discount-detail .ctrl input {
+    float: right;
+    height: 0.41rem;
+    background-color: #FF841D;
+    color: #fff;
+    border: none;
+    width: 1rem;
+    font-size: 20px;
+}
+.discount-detail .list .ui-border-b {
+    position: relative;
+}
+.discount-detail .list .ui-border-b .userimg {
+    position: absolute;
+    left: 0px;
+}
+.discount-detail .list li {
+    margin-bottom: 20px;
+}
+.discount-detail .list .ui-border-b .userimg {
+    width: 20%;
+    text-align: center;
+}
+.discount-detail .list .ui-border-b img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.discount-detail .list ul {
+    margin-top: 10px;
+}
+.discount-detail .list li .con {
+    padding-left: 20%;
+    width: 80%;
+}
+.discount-detail .list li .con .name div {
+    float: left;
+}
+.discount-detail .list li .con .name .username{
+    line-height: 20px;
+    color: skyblue;
+    font-size: 14px;
+}
+.discount-detail .list li .con .name .time {
+    line-height: 20px;
+    font-size: 12px;
+    float: right;
+    margin-right: 20px;
+}
+.discount-detail .list li .con .content {
+    line-height: 20px;
+    font-size: 14px;
+}
+/*国内折扣内容 end*/
+/*国内折扣底部部分 begin*/
+.discount-detail .inland-bottom {
+    width: 100%;
+    background-color: #EFEFEF;
+}
+.discount-detail .inland-bottom ul li a{
+    display: inline-block;
+    width: 33.33%;
+    float: left;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.discount-detail .inland-bottom ul li:nth-child(2) a{
+    border: 1px solid #C4C4C4;
+}
+.discount-detail .inland-bottom p {
+    line-height: 0.2rem;
+    text-align: center;
+}
+.discount-detail .inland-bottom p:nth-child(1) {
+    margin-top: 5px;
+}
+.discount-detail .inland-bottom div a {
+    color: #FF0000;
+}
+.discount-detail .inland-bottom div p:last-child {
+    color: #666666;
+}
+.discount-detail .buy-now button {
+    margin: 0.15rem 3%;
+    background-color: #FF9000;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    width: 94%;
+    border: none;
+    border-radius: 5px;
+}
+/*国内折扣底部部分 end*/
