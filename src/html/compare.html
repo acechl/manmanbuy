@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/compare.css"/>
+
+</head>
+<body >
+<!--比较页面头部-->
+<div class="cp-header">
+    <h1 class="cp-title f_left">慢慢买</h1>
+    <div class="cp-center f_left">
+        <p class="bijia">全网比价·折扣</p>
+        <p class="url">m.manmanbuy.com</a></p>
+    </div>
+    <div class="cp-right f_right">
+        <span class="appIcon iconFont" style="font-size: 40px;color: white">&#xe68c;</span>
+        <span class="appFont">APP下载</span>
+    </div>
+</div>
+<!--输入框-->
+<div class="divInp">
+    <input class="inp" type="text" placeholder="请输入你比价的商品"/>
+    <button class="btn">搜索</button>
+</div>
+<!--比较页面内容-->
+<div class="content">
+    <div>
+        <ul class="cp-content"></ul>
+        <ul class="cp-category c1 clearfix"></ul>
+        <ul class="cp-category c2 clearfix"></ul>
+        <ul class="cp-category c3 clearfix"></ul>
+        <ul class="cp-category c4 clearfix"></ul>
+        <ul class="cp-category c5 clearfix"></ul>
+        <ul class="cp-category c6 clearfix"></ul>
+        <ul class="cp-category c7 clearfix"></ul>
+        <ul class="cp-category c8 clearfix"></ul>
+    </div>
+</div>
+
+<!--内容模板-->
+<script type="text/template" id="contentTemp">
+       <%for(var i = 0; i < items.result.length; i++) {%>
+            <li class="li<%=i%>" style="position: relative"><a href="#"><%=items.result[i].title%></a><b class="iconFont right ">&#xe6ef;</b></li>
+       <%}%>
+</script>
+<!--内容分页列表模板-->
+<script type="text/template" id="liTemp">
+       <%for(var i = 0; i < items.result.length; i++) {%>
+           <li class="f_left item"><a href="#"><%=items.result[i].category%></a></li>
+       <%}%>
+</script>
+<!--比较页面底部-->
+<!--白菜价底部导航栏-->
+<div class="footer">
+    <ul class="bc-footerTab">
+        <li style="border-right: 0px">登录</li>
+        <li style="border-right: 0px">注册</li>
+        <li><b style="color: #747474;font-size: 25px">↑</b><a href="javascript:scroll(0,0)" style="color: #2D2D2D;">返回顶部</a></li>
+    </ul>
+    <!--白菜价底部-->
+    <div class="bc-footer">
+        <p><b style="color: red">手机APP下载</b><b>慢慢买手机版</b><b style="color: #525252">-掌上比价平台</b></p>
+        <p style="color: #747474">m.manmanbuy.com</p>
+    </div>
+
+</div>
+</body>
+
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/template-native.js"></script>
+<script src="../js/vendor/swipe.js"></script>
+<script src="../js/compare.js"></script>
+
+</html>

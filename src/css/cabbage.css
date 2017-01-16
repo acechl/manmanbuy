@@ -1,0 +1,277 @@
+ /*头部*/
+.bc-header {
+    width: 100%;
+    height: 60px;
+    background-color: #F4483E;
+    position: relative;
+}
+.bc-title{
+    width: 100%;
+    height: 60px;
+    background-color: #F4483E;
+    text-align: center;
+    color: white;
+    line-height: 60px;
+    font-size: 3rem;
+}
+.bc-left{
+    width: 40px;
+    height: 60px;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    line-height: 60px;
+}
+.bc-right{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    right: -30px;
+    bottom: -31px;
+    color: white;
+    font-size: 2rem;
+}
+/*tab栏切换*/
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.tab {
+    border-bottom: 0;
+    height: 36px;
+    width: 2050px;
+}
+.tab li {
+    position: relative;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    font-size: 2rem;
+}
+.tab span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background: #ddd;
+    width: 1px;
+    height: 14px;
+    overflow: hidden;
+}
+.products {
+    width: 100%;
+}
+.products .main {
+    float: left;
+    display: none;
+}
+.products .main.selected {
+    display: block;
+}
+.products .main {
+    width: 100%;
+}
+.tab li.active {
+    border-color: red;
+    color: red;
+}
+.tab-main {
+    width: 100%;
+}
+/*进度条样式*/
+.progressbar_1{
+    background-color:pink;
+    height:8px;
+    width:80px;
+    border:1px solid #bbb;
+    color:#222;
+    text-align: right;
+    border-radius: 40px;
+    margin-bottom: 5px;
+}
+.progressbar_1 .bar {
+    background-color:red;
+    height:8px;
+    width:0;
+    font-size: 1rem;
+    line-height: 8px;
+    border-radius: 40px;
+}
+/*返回顶部按钮*/
+.topBtn{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #808080;
+    font-size: 4rem;
+    text-align: center;
+    color: #dddddd;
+    line-height: 65px;
+    font-weight: bold;
+}
+/*白菜价底部导航栏*/
+.bc-footerTab{
+    background-color: #EFEFEF;
+    position: relative;
+   z-index: 1;
+    left: 0;
+    bottom: 0;
+}
+.bc-footerTab li{
+    float: left;
+    width: 33.33%;
+    border: 1px solid #333333;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #2D2D2D;
+    font-size: 2rem;
+}
+/*白菜价底部*/
+.bc-footer{
+    height: 80px;
+    width: 100%;
+    background-color: #EFEFEF;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+.bc-footer p{
+    text-align: center;
+    font-size: 2rem;
+    height: 23px;
+    line-height: 60px;
+}
+/*白菜价内容*/
+.products li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    height: 110px;
+    width: 100%;
+}
+.products li .main-left {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+.products li .main-left img {
+    width: 90px;
+}
+.products li .main-right {
+    margin-left: 35%;
+     /*margin-right: 10px;*/
+}
+.products li .name {
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+.products li .price {
+    color: #FC353A;
+    font-size: 2rem;
+    line-height: 20px;
+}
+.products li .price del {
+    font-size: 14px;
+    color:#666666;
+    margin-left: 5px;
+}
+.products .progressbar_l .bar {
+    background-color: #FFB7B7;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.products .buyNow {
+    background-color: #FF5E5D;
+    color: #fff;
+    margin-left: 30px;
+}
+.products .link {
+    background-color: #fff;
+    border: 1px dashed #E4393C;
+    color: #E4393C
+}
+.bc-header,.wrapper,.bc-footerTab,.bc-footer {
+    background-color: #F7F7F7;
+}
+@media only screen and (max-width: 1080px), only screen and (max-device-width:1080px) {
+    html,body {
+        font-size:17.875px;
+    }
+}
+@media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
+    html,body {
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+    html,body {
+        font-size:13.5px;
+    }
+}
+@media only screen and (max-width: 720px), only screen and (max-device-width:720px) {
+    html,body {
+        font-size:12.25px;
+    }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    html,body {
+        font-size:11px;
+    }
+}
+@media only screen and (max-width: 600px), only screen and (max-device-width:600px) {
+    html,body {
+        font-size:10.375px;
+    }
+}
+@media only screen and (max-width: 540px), only screen and (max-device-width:540px) {
+    html,body {
+        font-size:9.4375px;
+    }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width:480px) {
+    html,body {
+        font-size:8.5px;
+    }
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width:414px) {
+    html,body {
+        font-size:7.46875px;
+    }
+}
+@media only screen and (max-width: 400px), only screen and (max-device-width:400px) {
+    html,body {
+        font-size:7.25px;
+    }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+    html,body {
+        font-size:6.859375px;
+    }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width:360px) {
+    html,body {
+        font-size:6.625px;
+    }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    html,body {
+        font-size:6px;
+    }
+}
+@media only screen and (max-width: 240px), only screen and (max-device-width:240px) {
+    html, body {
+        font-size: 4.75px;
+    }
+}

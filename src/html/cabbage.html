@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/cabbage.css"/>
+</head>
+<body>
+<!--白菜价头部-->
+<div class="bc-header">
+    <span class="bc-left">&lt;</span>
+    <h1 class="bc-title">白菜价-淘宝内部券</h1>
+    <span class="bc-right">App下载</span>
+</div>
+
+<!--白菜价tab栏-->
+<div class="wrapper">
+       <ul class="tab">
+
+       </ul>
+    <div class="products">
+        <div class="main selected m1 clearfix">
+
+        </div>
+        <div class="main m2 clearfix">
+
+        </div>
+        <div class="main m3 clearfix">
+
+        </div>
+        <div class="main m4 clearfix">
+
+        </div>
+        <div class="main m5 clearfix">
+
+        </div>
+        <div class="main m6 clearfix">
+
+        </div>
+        <div class="main m7 clearfix">
+
+        </div>
+        <div class="main m8 clearfix">
+
+        </div>
+        <div class="main m9 clearfix">
+
+        </div>
+        <div class="main m10 clearfix">
+
+        </div>
+        <div class="main m11 clearfix">
+
+        </div>
+        <div class="main m12 clearfix">
+
+        </div>
+        <div class="main m13 clearfix">
+
+        </div>
+
+    </div>
+</div>
+<!--返回顶部按钮-->
+
+<!--白菜价底部导航栏-->
+<ul class="bc-footerTab clearfix">
+    <li style="border-right: 0px">登录</li>
+    <li style="border-right: 0px">注册</li>
+    <li><b style="color: #747474;font-size: 25px">↑</b><a href="javascript:scroll(0,0)" style="color: #2D2D2D;">返回顶部</a></li>
+</ul>
+<!--白菜价底部-->
+<div class="bc-footer">
+        <p><b style="color: red">手机APP下载</b><b>慢慢买手机版</b><b style="color: #525252">-掌上比价平台</b></p>
+        <p style="color: #747474">m.manmanbuy.com</p>
+    <a href="javascript:scroll(0,0)" class="topBtn">↑</a>
+</div>
+
+<!--tab栏标题模板引擎-->
+
+<script type="text/template" id="tab-Title">
+    <% for(var i = 0; i < items.result.length; i++) { %>
+        <li class="tab-item <%=i==0?'active':''%>"><%=items.result[i].title%></li>
+    <% } %>
+</script>
+
+<!--tab栏内容模板引擎-->
+<script type="text-template" id="tab-content">
+    <%for(var i = 0; i < items.result.length; i++) {%>
+         <li class="tab-main clearfix">
+             <div class="main-left f_left">
+                 <a href="#" class="inter"></a>
+             </div>
+             <div class="main-right ">
+                 <p class="name"></p>
+                 <p class="price"></p>
+                 <div class="progressbar_1 f_left">
+                     <div class="bar" style="width: 50%;">50%</div>
+                 </div>
+                 <!--<p class="f_right con"></p>-->
+                <div class="clearfix"> <button class="f_left link">点击领10元优惠券</button> <button class="buyNow">下单链接</button></div>
+             </div>
+         </li>
+    <%}%>
+</script>
+</body>
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/template-native.js"></script>
+<script src="../js/vendor/swipe.js"></script>
+<script src="../js/cabbage.js"></script>
+</html>

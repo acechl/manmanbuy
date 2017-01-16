@@ -1,0 +1,202 @@
+/*头部*/
+.cp-header {
+    width: 100%;
+    height: 60px;
+    background-color: #FF841D;
+    position: relative;
+}
+.cp-title{
+    width: 100%;
+    height: 60px;
+    background-color: #FF841D;
+    text-align: left;
+    color: white;
+    line-height: 60px;
+    font-size: 3rem;
+    margin-left: 20px;
+}
+.cp-center{
+    position: absolute;
+    left: 190px;
+    top: 10px;
+    color: white;
+    font-size: 2rem;
+}
+.cp-left{
+    width: 40px;
+    height: 60px;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    line-height: 60px;
+}
+.cp-right{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    right: -30px;
+    bottom: -31px;
+    color: white;
+    font-size: 2rem;
+}
+.cp-category{
+    display: none;
+}
+.cp-category .item{
+    height: 45px;
+    border: 1px solid black;
+    width: 33.33%;
+    line-height: 45px;
+    text-align: center;
+}
+.divInp{
+    width: 100%;
+    padding: 0px 15px;
+    margin-top: 10px;
+}
+.divInp .inp{
+    width: 90%;
+    height: 45px;
+    border-radius: 25px;
+    padding-left: 15px;
+    font-size: 3rem;
+}
+.right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.divInp .btn{
+    width: 60px;
+    height: 45px;
+    background-color: #FF841D;
+    border-radius:25px;
+}
+.cp-content li{
+    height: 55px;
+    line-height: 55px;
+    font-size: 3rem;
+}
+.footer{
+ position: relative;
+    left: 0;
+    bottom: -982px;
+}
+/*白菜价底部导航栏*/
+.bc-footerTab{
+    background-color: #EFEFEF;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconFont{
+    font-family: 'iconfont';
+}
+.bc-footerTab li{
+    float: left;
+    width: 33.33%;
+    border: 1px solid #333333;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #2D2D2D;
+    font-size: 2rem;
+}
+/*白菜价底部*/
+.bc-footer{
+    height: 80px;
+    width: 100%;
+    background-color: #EFEFEF;
+}
+.bc-footer p{
+    text-align: center;
+    font-size: 2rem;
+    height: 50px;
+    line-height: 30px;
+}
+.appIcon{
+    position:absolute;
+    left: 15px;
+    bottom: 50px;
+}
+.appFont{
+    position: absolute;
+    left: 0;
+    bottom: 31px;
+}
+@media only screen and (max-width: 1080px), only screen and (max-device-width:1080px) {
+    html,body {
+        font-size:17.875px;
+    }
+}
+@media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
+    html,body {
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+    html,body {
+        font-size:13.5px;
+    }
+}
+@media only screen and (max-width: 720px), only screen and (max-device-width:720px) {
+    html,body {
+        font-size:12.25px;
+    }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    html,body {
+        font-size:11px;
+    }
+}
+@media only screen and (max-width: 600px), only screen and (max-device-width:600px) {
+    html,body {
+        font-size:10.375px;
+    }
+}
+@media only screen and (max-width: 540px), only screen and (max-device-width:540px) {
+    html,body {
+        font-size:9.4375px;
+    }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width:480px) {
+    html,body {
+        font-size:8.5px;
+    }
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width:414px) {
+    html,body {
+        font-size:7.46875px;
+    }
+}
+@media only screen and (max-width: 400px), only screen and (max-device-width:400px) {
+    html,body {
+        font-size:7.25px;
+    }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+    html,body {
+        font-size:6.859375px;
+    }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width:360px) {
+    html,body {
+        font-size:6.625px;
+    }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    html,body {
+        font-size:6px;
+    }
+}
+@media only screen and (max-width: 240px), only screen and (max-device-width:240px) {
+    html, body {
+        font-size: 4.75px;
+    }
+}
